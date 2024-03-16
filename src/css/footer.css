@@ -1,10 +1,8 @@
 /* FOOTER */
 .footer {
-  padding-left: 16px;
-  padding-top: 50px;
   box-shadow: 0 -4px 24px 0px #69696919;
   background-image: url(../img/footer_bg_image.jpg);
-  background-position: 100px;
+  background-position: 200px 30px;
   background-repeat: no-repeat;
 }
 
