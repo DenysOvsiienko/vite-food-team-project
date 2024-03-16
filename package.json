@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "vite-food-team-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/vite-food-team-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
