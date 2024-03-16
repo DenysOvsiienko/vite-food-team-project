@@ -1,0 +1,63 @@
+.about-section {
+  padding-top: 113px;
+  padding-bottom: 124px;
+  background-color: #ffe550;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 51px;
+}
+.img-wrapper {
+  position: relative;
+  border-radius: 100%;
+  background-color: #fefefe;
+  width: 502px;
+  height: 502px;
+}
+.apple-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+.about-text-wrapper {
+  max-width: 573px;
+}
+.section-title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.section-text {
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.advantage-list {
+  display: flex;
+  column-gap: 67px;
+}
+
+.advantage-list-title {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+.advantage-list-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+.white-btn {
+  background-color: #fff;
+  border: 2px solid #7eb101;
+  min-width: 106px;
+  height: 40px;
+}
+.white-btn:hover,
+.white-btn:focus {
+  background-color: #bbf330;
+  border: none;
+}
