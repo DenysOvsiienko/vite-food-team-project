@@ -1,10 +1,11 @@
 /* FOOTER */
-footer {
+.footer {
   padding-left: 16px;
   padding-top: 50px;
   box-shadow: 0 -4px 24px 0px #69696919;
-  display: flex;
-  background: url(../img/footer_bg_image.jpg);
+  background-image: url(../img/footer_bg_image.jpg);
+  background-position: 100px;
+  background-repeat: no-repeat;
 }
 
 .footer-up {
@@ -84,8 +85,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .footer-down-ul {
@@ -94,6 +95,13 @@ footer {
   gap: 28px;
 }
 
+.links {
+  text-decoration: underline;
+  color: #7eb101;
+  /* text */
+  font-weight: 400;
+  font-size: 12px;
+}
 .footer-down-par {
   /* text */
   font-weight: 400;
