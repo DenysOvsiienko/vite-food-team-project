@@ -1,0 +1,74 @@
+<!-- Modal window -->
+<div class="backdrop" data-modal>
+  <div class="order-form-dialog-container">
+    <button class="order-form-close-btn" type="button" data-modal-close>
+      <svg class="icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <p class="order-form-dialog-title">Order Form</p>
+    <form>
+      <div class="order-form-input-container">
+        <label class="order-form-input-label" for="user-name"> Name </label>
+        <input
+          class="order-form-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Your name"
+          required
+          autofocus
+        />
+      </div>
+      <div class="order-form-input-container">
+        <label class="order-form-input-label" for="user-tel">
+          Phone number
+        </label>
+        <input
+          class="order-form-input"
+          type="tel"
+          name="user-tel"
+          id="user-tel"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          required
+        />
+      </div>
+      <div class="order-form-input-container">
+        <label class="order-form-input-label" for="user-email"> Email </label>
+        <input
+          class="order-form-input"
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="example@gmail.com"
+          required
+        />
+      </div>
+      <div class="oreder-form-checkbox-wrapper">
+        <input
+          class="order-form-privacy-checkbox visually-hidden"
+          type="checkbox"
+          value="true"
+          id="order-form-privacy-checkbox"
+          name="order-form-privacy-checkbox"
+          required
+        />
+        <label
+          class="order-form-privacy-checkbox-label"
+          for="order-form-privacy-checkbox"
+          ><span class="order-form-custom-checkmark"
+            ><svg
+              class="order-form-custom-checkmark-icon"
+              width="10"
+              height="8"
+            >
+              <use href="./images/icons.svg#icon-checkmark"></use></svg></span
+          >I accept the terms and conditions of the&nbsp;
+          <a class="order-form-privacy-link" href="">Privacy Policy</a></label
+        >
+      </div>
+      <button class="main-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+<script src="./js/modal.js"></script>
