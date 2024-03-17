@@ -1,6 +1,5 @@
 /* FOOTER */
 .footer {
-  padding-left: 16px;
   padding-top: 50px;
   box-shadow: 0 -4px 24px 0px #69696919;
   background-image: url(../img/footer_bg_image.jpg);
@@ -12,8 +11,10 @@
   display: flex;
   flex-direction: row;
 }
-
 .footer-menu {
+  display: flex;
+}
+.footer-menu-ul {
   display: flex;
   flex-direction: row;
   gap: 28px;
@@ -107,4 +108,27 @@
   font-weight: 400;
   font-size: 12px;
   color: #2c2c2c;
+}
+
+/* ___Tablet adaptation___ */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    background-image: url(../img/tablet_footer_bg_image.jpg);
+    background-position: 0px 35px;
+    background-repeat: no-repeat;
+  }
+
+  .footer-up {
+    display: block;
+    padding-top: 100px;
+  }
+  .footer-menu {
+    display: -webkit-inline-box;
+  }
+  .footer-down {
+    padding-bottom: 100px;
+  }
+  .footer-subcribe {
+    margin-top: 40px;
+  }
 }
