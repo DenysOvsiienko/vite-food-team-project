@@ -4,7 +4,7 @@
   padding-top: 50px;
   box-shadow: 0 -4px 24px 0px #69696919;
   background-image: url(../img/footer_bg_image.jpg);
-  background-position: 100px;
+  background-position: 200px 30px;
   background-repeat: no-repeat;
 }
 
@@ -86,7 +86,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .footer-down-ul {
