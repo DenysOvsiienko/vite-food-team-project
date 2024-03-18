@@ -1,0 +1,137 @@
+/* ===============Subscribe section styles============== */
+/* ___Mobile adaptaion_______Subscribe section styles___ */
+
+.subscribe {
+  padding-top: 8px;
+  padding-bottom: 60px;
+}
+
+.subscribe .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.subscribe-form-content {
+  margin-right: auto;
+}
+
+.subscribe-title {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.subscribe-label {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.subscribe-form-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.subscribe-form-input {
+  border: 0.85px solid #ffe550;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+  border-radius: 30px;
+  padding: 12px;
+  min-width: 279px;
+  height: 42px;
+  background-color: #fefefe;
+  outline: transparent;
+}
+
+.subscribe .main-btn:hover,
+.subscribe .main-btn:focus {
+  background-color: #ffe450;
+}
+
+.subscribe img {
+  width: 178px;
+  height: 78px;
+  margin-bottom: 17px;
+}
+
+/* ___Tablet adaptation_______Subscribe section styles___ */
+@media screen and (min-width: 768px) {
+  .subscribe {
+    padding-top: 24px;
+    padding-bottom: 100px;
+  }
+
+  .subscribe-title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .subscribe .container {
+    align-items: flex-end;
+  }
+
+  .subscribe-title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-label {
+    font-size: 16px;
+    max-width: 520px;
+    margin-bottom: 24px;
+  }
+
+  .subscribe img {
+    width: 310px;
+    height: 136px;
+    margin-bottom: 0;
+  }
+
+  .subscribe-form-input-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .subscribe-form-input {
+    min-width: 395px;
+  }
+}
+
+/* ___Desktop adaptation_____Subscribe section styles___ */
+@media screen and (min-width: 1280px) {
+  .subscribe {
+    padding-top: 176px;
+    padding-bottom: 201px;
+  }
+
+  .subscribe .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subscribe-label {
+    max-width: 532px;
+  }
+
+  .subscribe img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .subscribe-form-input-container {
+    align-items: center;
+    gap: 34px;
+  }
+}
+/* =============/ Subscribe section styles============== */
