@@ -77,6 +77,7 @@
   max-width: 280px;
   max-height: 282px;
   background: #fefefe;
+  padding: 25px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -85,6 +86,7 @@
     border-radius: 168px;
     max-height: 338px;
     max-width: 336px;
+    padding: 30px;
   }
 }
 
@@ -97,10 +99,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 35px;
   }
 }
 @media only screen and (max-width: 767px) {
   .mobile-none {
     display: none;
   }
+}
+
+.favorit-item:hover,
+.favorit-item:focus {
+  border: 16px solid #bbf330;
 }
