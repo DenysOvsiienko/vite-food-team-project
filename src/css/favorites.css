@@ -1,0 +1,114 @@
+.favorit {
+  padding-top: 132px;
+  padding-bottom: 120px;
+}
+
+@media only screen and (min-width: 768px) {
+  .favorit {
+    padding-top: 191px;
+    padding-bottom: 160px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .favorit {
+    width: 1248px;
+    height: 953px;
+    padding-top: 120px;
+    padding-bottom: 101px;
+  }
+}
+
+.favorit-title {
+  font-size: 28px;
+  text-align: center;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .favorit-title {
+    font-size: 42px;
+    text-align: center;
+  }
+}
+
+.favorit-text {
+  font-size: 14px;
+  text-align: center;
+  color: #2c2c2c;
+  margin-bottom: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .favorit-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .favorit-text {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .favorit-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .favorit-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.favorit-item {
+  border: 11px solid #ffe550;
+  border-radius: 140px;
+  max-width: 280px;
+  max-height: 282px;
+  background: #fefefe;
+  padding: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .favorit-item {
+    border: 14px solid #ffe550;
+    border-radius: 168px;
+    max-height: 338px;
+    max-width: 336px;
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .favorit-item {
+    width: calc((100% - (32px * 2)) / 3);
+    height: 397px;
+    border: 16px solid #ffe550;
+    border-radius: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mobile-none {
+    display: none;
+  }
+}
+
+.favorit-item:hover,
+.favorit-item:focus {
+  border: 16px solid #bbf330;
+}
