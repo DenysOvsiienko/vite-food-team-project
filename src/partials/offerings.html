@@ -1,39 +1,97 @@
-<section class="about-section">
-  <div class="container about-container">
-    <div class="img-wrapper">
-      <img
-        src="../img/apple-tablet.png"
-        class="apple-image"
-        alt="Apple"
-        width="396"
-        height="502"
-      />
+<section class="offerings-section">
+  <div class="container offerings-container">
+    <div class="apple-offerings-wrapper">
+      <div class="apple-elipse">
+        <div class="apple-bg">
+          <picture class="apple-picture">
+            <source
+              srcset="
+                ../img/offerings/apple-mobile.png    1x,
+                ../img/offerings/apple-mobile@2x.png 2x
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ../img/offerings/apple-tablet.png    1x,
+                ../img/offerings/apple-tablet@2x.png 2x
+              "
+              media="(max-width:1279px)"
+            />
+            <source
+              srcset="
+                ../img/offerings/apple.png    1x,
+                ../img/offerings/apple@2x.png 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <img
+              src="../img/offerings/apple-mobile.png"
+              alt="Apple"
+              class="apple-img"
+            />
+          </picture>
+        </div>
+      </div>
     </div>
-    <div class="about-text-wrapper">
-      <h2 class="section-title">What’s Special About Our Offerings</h2>
-      <p class="section-text">
+    <div class="offerings-text-wrapper">
+      <h2 class="offerings-section-title">
+        What’s Special About Our Offerings
+      </h2>
+      <p class="offerings-section-text">
         With our platform, you can browse through a diverse selection of
         cuisines and local restaurants, and choose from a variety of dishes that
         cater to your specific taste buds.
       </p>
-      <ul class="advantage-list">
-        <li class="advantage-list-item">
-          <h3 class="advantage-list-title">Fastest Delivery</h3>
-          <p class="advantage-list-text">
+      <ul class="offerings-list">
+        <li class="offerings-list-item">
+          <div class="offerings-icon-wrapper">
+            <svg
+              class="offering-icon"
+              width="32"
+              height="32"
+              aria-label="Rocket"
+            >
+              <use href="../img/icons.svg#icon-rocket_launch"></use>
+            </svg>
+          </div>
+          <h3 class="offer-title">Fastest Delivery</h3>
+          <p class="offer-text">
             Our advanced logistics system and dedicated delivery partners ensure
             that your meals are delivered to you within 30-minutes.
           </p>
         </li>
-        <li class="advantage-list-item">
-          <h3 class="advantage-list-title">Easy To Order</h3>
-          <p class="advantage-list-text">
+        <li class="offerings-list-item">
+          <div class="offerings-icon-wrapper">
+            <svg
+              class="offering-icon"
+              width="32"
+              height="32"
+              aria-label="touch-button"
+            >
+              <use href="../img/icons.svg#icon-touch_app"></use>
+            </svg>
+          </div>
+          <h3 class="offer-title">Easy To Order</h3>
+          <p class="offer-text">
             You can browse through a wide variety of cuisines and restaurants,
             select your favorite meals, and place your order in just a few
             clicks.
           </p>
         </li>
       </ul>
-      <button type="button" class="white-btn btn">Order Now</button>
+      <button type="button" class="main-btn offering-btn">Order Now</button>
+      <a href="" class="read-more-link">
+        Read More
+        <svg
+          class="arrow-right-icon"
+          width="17"
+          height="17"
+          aria-label="arrow-right"
+        >
+          <use href="../img/icons.svg#arrow-right"></use>
+        </svg>
+      </a>
     </div>
   </div>
 </section>

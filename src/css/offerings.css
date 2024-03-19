@@ -1,63 +1,199 @@
-.about-section {
-  padding-top: 113px;
-  padding-bottom: 124px;
-  background-color: #ffe550;
+.offerings-section {
+  padding-top: 45px;
+  padding-bottom: 66px;
 }
-
-.about-container {
+.offerings-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding-right: 51px;
-}
-.img-wrapper {
-  position: relative;
-  border-radius: 100%;
-  background-color: #fefefe;
-  width: 502px;
-  height: 502px;
-}
-.apple-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-}
-.about-text-wrapper {
-  max-width: 573px;
-}
-.section-title {
-  font-size: 42px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-.section-text {
-  line-height: 1.5;
-  margin-bottom: 40px;
-}
-.advantage-list {
-  display: flex;
-  column-gap: 67px;
+  gap: 60px;
 }
 
-.advantage-list-title {
+@media only screen and (min-width: 768px) {
+  .offerings-section {
+    padding-top: 21px;
+    padding-bottom: 94px;
+  }
+  .offerings-container {
+    align-items: flex-start;
+  }
+  .offerings-text-wrapper {
+    max-width: 620px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .offerings-section {
+    padding-top: 113px;
+    padding-bottom: 124px;
+    background-color: #ffe550;
+  }
+  .offerings-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .offerings-text-wrapper {
+    max-width: 573px;
+  }
+}
+/* ==============================================================start  apple */
+.apple-offerings-wrapper {
+  position: relative;
+  background-color: lightcoral;
+  width: 280px;
+  height: 309px;
+}
+.apple-picture {
+  position: absolute;
+  left: 42px;
+}
+@media only screen and (min-width: 768px) {
+  .apple-offerings-wrapper {
+    width: 357px;
+    height: 394px;
+  }
+  .apple-picture {
+    left: 54px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .apple-offerings-wrapper {
+    width: 550px;
+    height: 604px;
+  }
+  .apple-picture {
+    left: 84px;
+  }
+}
+/* ==============================================================end  apple */
+/* ==============================================================start  section text */
+.offerings-section-title {
+  margin-bottom: 28px;
+  font-size: 28px;
+}
+.offerings-section-text {
+  margin-bottom: 36px;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+@media only screen and (min-width: 768px) {
+  .offerings-section-title {
+    max-width: 526px;
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
+  .offerings-section-text {
+    max-width: 500px;
+    margin-bottom: 33px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .offerings-section-title {
+    line-height: 1.2;
+  }
+  .offerings-section-text {
+    margin-bottom: 40px;
+  }
+}
+/* ==============================================================end  section text */
+/* ==============================================================start offerings list */
+.offerings-list {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.offerings-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  background-color: #fefefe;
+}
+.offering-icon {
+  fill: rgba(126, 177, 1, 1);
+}
+.offer-title {
   font-size: 18px;
-  line-height: 1.4;
   margin-bottom: 16px;
 }
-.advantage-list-text {
+.offer-text {
   font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 32px;
+  line-height: 1.43;
 }
-.white-btn {
-  background-color: #fff;
-  border: 2px solid #7eb101;
+@media only screen and (min-width: 768px) {
+  .offerings-list {
+    margin-bottom: 20px;
+    flex-direction: row;
+    gap: 80px;
+  }
+  .offerings-list-item {
+    flex-basis: calc((100% - 80px) / 2);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .offerings-list {
+    margin-bottom: 32px;
+    gap: 67px;
+  }
+  .offer-title {
+    line-height: 1.4;
+  }
+  .offer-text {
+    line-height: 1.5;
+  }
+}
+
+/* ==============================================================end offerings list */
+
+/* ==============================================================start buttons */
+.offering-btn {
   min-width: 106px;
   height: 40px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: 2px solid #7eb101;
+  background-color: #fff;
+  margin-right: 24px;
 }
-.white-btn:hover,
-.white-btn:focus {
-  background-color: #bbf330;
-  border: none;
+.offering-btn:focus,
+.offering-btn:hover {
+  border-color: #ffe450;
 }
+
+.read-more-link {
+  font-size: 13px;
+  line-height: 1.5;
+  display: inline-flex;
+  align-items: flex-end;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.read-more-link:hover,
+.read-more-link:focus {
+  color: #7eb101;
+}
+.arrow-right-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.read-more-link:hover .arrow-right-icon,
+.read-more-link:focus .arrow-right-icon {
+  fill: #7eb101;
+}
+
+@media only screen and (min-width: 1280px) {
+  .read-more-link {
+    display: none;
+  }
+}
+
+/* ==============================================================end buttons */
