@@ -54,20 +54,18 @@
   position: absolute;
   left: 79px;
   bottom: 38px;
-}
-.apple-shadow-icon {
   width: 128px;
   height: 44px;
-  filter: blur(13.24px);
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  filter: blur(6px);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
-/* @media only screen and (max-width: 767px) {
-  .apple-picture {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 133px;
-    width: 201px;
-    height: 255px;
-  }
-} */
+
 @media only screen and (min-width: 768px) {
   .apple-offerings-wrapper {
     width: 357px;
@@ -77,13 +75,11 @@
     left: 54px;
   }
   .apple-shadow {
-    left: 101px;
-    bottom: 48px;
-  }
-  .apple-shadow-icon {
     width: 164px;
     height: 56px;
-    filter: blur(8.44px);
+    filter: blur(8px);
+    left: 101px;
+    bottom: 48px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -111,13 +107,11 @@
     left: 84px;
   }
   .apple-shadow {
-    left: 155px;
-    bottom: 75px;
-  }
-  .apple-shadow-icon {
     width: 252px;
     height: 87px;
     filter: blur(13px);
+    left: 155px;
+    bottom: 75px;
   }
 }
 /* ==============================================================end  apple */
