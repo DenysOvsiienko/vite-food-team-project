@@ -1,0 +1,247 @@
+.offerings-section {
+  padding-top: 45px;
+  padding-bottom: 66px;
+}
+.offerings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .offerings-section {
+    padding-top: 21px;
+    padding-bottom: 94px;
+  }
+  .offerings-container {
+    align-items: flex-start;
+  }
+  .offerings-text-wrapper {
+    max-width: 620px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .offerings-section {
+    padding-top: 113px;
+    padding-bottom: 124px;
+    background-color: #ffe550;
+  }
+  .offerings-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .offerings-text-wrapper {
+    max-width: 573px;
+  }
+}
+/* ==============================================================start  apple */
+.apple-offerings-wrapper {
+  position: relative;
+  width: 280px;
+  height: 309px;
+}
+
+.apple-picture {
+  position: absolute;
+  left: 42px;
+  top: 0;
+  z-index: 1;
+}
+.apple-shadow {
+  position: absolute;
+  left: 79px;
+  bottom: 38px;
+  width: 128px;
+  height: 44px;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  filter: blur(6px);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .apple-offerings-wrapper {
+    width: 357px;
+    height: 394px;
+  }
+  .apple-picture {
+    left: 54px;
+  }
+  .apple-shadow {
+    width: 164px;
+    height: 56px;
+    filter: blur(8px);
+    left: 101px;
+    bottom: 48px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .apple-offerings-wrapper {
+    width: 550px;
+    height: 604px;
+  }
+  .apple-ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 550px;
+    margin-top: 54px;
+    border-radius: 550px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+  }
+  .apple-bg {
+    width: 502px;
+    height: 502px;
+    border-radius: 100%;
+    background-color: #fefefe;
+  }
+  .apple-picture {
+    left: 84px;
+  }
+  .apple-shadow {
+    width: 252px;
+    height: 87px;
+    filter: blur(13px);
+    left: 155px;
+    bottom: 75px;
+  }
+}
+/* ==============================================================end  apple */
+/* ==============================================================start  section text */
+.offerings-section-title {
+  margin-bottom: 28px;
+  font-size: 28px;
+}
+.offerings-section-text {
+  margin-bottom: 36px;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+@media only screen and (min-width: 768px) {
+  .offerings-section-title {
+    max-width: 526px;
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
+  .offerings-section-text {
+    max-width: 500px;
+    margin-bottom: 33px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .offerings-section-title {
+    line-height: 1.2;
+  }
+  .offerings-section-text {
+    margin-bottom: 40px;
+  }
+}
+/* ==============================================================end  section text */
+/* ==============================================================start offerings list */
+.offerings-list {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.offerings-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  background-color: #fefefe;
+}
+.offering-icon {
+  fill: rgba(126, 177, 1, 1);
+}
+.offer-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.offer-text {
+  font-size: 14px;
+  line-height: 1.43;
+}
+@media only screen and (min-width: 768px) {
+  .offerings-list {
+    margin-bottom: 20px;
+    flex-direction: row;
+    gap: 80px;
+  }
+  .offerings-list-item {
+    flex-basis: calc((100% - 80px) / 2);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .offerings-list {
+    margin-bottom: 32px;
+    gap: 67px;
+  }
+  .offer-title {
+    line-height: 1.4;
+  }
+  .offer-text {
+    line-height: 1.5;
+  }
+}
+
+/* ==============================================================end offerings list */
+
+/* ==============================================================start buttons */
+.offering-btn {
+  min-width: 106px;
+  height: 40px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: 2px solid #7eb101;
+  background-color: #fff;
+  margin-right: 24px;
+}
+.offering-btn:focus,
+.offering-btn:hover {
+  border-color: #ffe450;
+}
+
+.read-more-link {
+  font-size: 13px;
+  line-height: 1.5;
+  display: inline-flex;
+  align-items: flex-end;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.read-more-link:hover,
+.read-more-link:focus {
+  color: #7eb101;
+}
+.arrow-right-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.read-more-link:hover .arrow-right-icon,
+.read-more-link:focus .arrow-right-icon {
+  fill: #7eb101;
+}
+
+@media only screen and (min-width: 1280px) {
+  .read-more-link {
+    display: none;
+  }
+}
+
+/* ==============================================================end buttons */
